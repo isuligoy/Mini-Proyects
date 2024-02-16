@@ -1,5 +1,5 @@
 * {
-    outline: 1px solid green;
+    /* outline: 1px solid green; */
 }
 body {
     font-family: "Poppins", sans-serif;
@@ -11,6 +11,7 @@ body {
     margin: auto;
     text-align: center;
     padding-top: 10px;
+    transition: transform 0.5s; /* Transition */
 }
 svg {
     width: 30px;
@@ -73,9 +74,16 @@ header .icon-cart span {
     background-color: #353432;
     color: #eee;
     position: fixed;
-    inset: 0 0 0 auto;
+    inset: 0 -400px 0 auto; /* Transition */
     display: grid;
     grid-template-rows: 70px 1fr 70px;
+    transition: 0.5s; /* Transition */
+}
+.showCart .cartTab {
+    inset: 0 0 0 auto; /* Transition */
+}
+.showCart .container {
+    transform: translateX(-250px); /* Transition */
 }
 .cartTab h1 {
     padding: 20px;
@@ -106,5 +114,25 @@ header .icon-cart span {
     text-align: center;
     align-items: center;
 }
-.listCart .quantity {
+.listCart .quantity span {
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    background-color: #eee;
+    color: #555;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.listCart .quantity span:nth-child(2) {
+    background-color: transparent;
+    color: #eee;
+}
+.listCart .item:nth-child(even) {
+    background-color: #eee1;
+}
+.listCart {
+    overflow: auto; /*si tiene muchos items pone scroll*/
+}
+.listCart::-webkit-scrollbar {
+    width: 0;
 }
