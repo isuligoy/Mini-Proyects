@@ -24,6 +24,7 @@ header {
 }
 header .icon-cart {
     position: relative;
+    cursor: pointer;
 }
 header .icon-cart span {
     display: flex;
@@ -135,4 +136,14 @@ header .icon-cart span {
 }
 .listCart::-webkit-scrollbar {
     width: 0;
+}
+@media screen and (max-width: 992px) {
+    .listProduct {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+@media screen and (max-width: 772px) {
+    .listProduct {
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
