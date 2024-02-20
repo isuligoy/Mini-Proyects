@@ -1,0 +1,10 @@
+{
+    "projects": [
+        {
+            "name": "FOLDER PROYECTO NAME",
+            "id": 1,
+            "image": "image/1.png",
+            "url": "./ DONDE ESTA EN EL PROYECTO"
+        }
+    ]
+}
