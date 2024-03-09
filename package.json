@@ -8,7 +8,9 @@
         "build": "astro build",
         "preview": "astro preview",
         "astro": "astro",
-        "cf": "node scripts/createFolder.js"
+        "cf": "node scripts/createFolder.js",
+        "cj": "node scripts/createJson.js",
+        "crm": "node scripts/createMD.js"
     },
     "dependencies": {
         "astro": "4.4.0"

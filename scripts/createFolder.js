@@ -26,16 +26,6 @@ const contentHTML = (folderName) => `
 </html>
 `;
 
-const contentCSS = `
-body {
-  background-color: #f0f0f0;
-}
-`;
-
-const contentJS = `
-console.log('Hola, mundo!');
-`;
-
 //Create the folder
 async function createNewFolder(folderName) {
     if (!folderName) {
@@ -50,8 +40,8 @@ async function createNewFolder(folderName) {
                 path.join(folder, "index.html"),
                 contentHTML(folderName)
             ),
-            fs.writeFile(path.join(folder, "styles.css"), contentCSS),
-            fs.writeFile(path.join(folder, "main.js"), contentJS),
+            fs.writeFile(path.join(folder, "styles.css")),
+            fs.writeFile(path.join(folder, "main.js")),
         ]);
     } catch (error) {
         console.error("Error", error);
@@ -59,7 +49,7 @@ async function createNewFolder(folderName) {
 }
 
 // Get de last folder in number
-async function getLastFolderNumber() {
+export async function getLastFolderNumber() {
     const folders = await fs.readdir(publicPath);
     const numbers = folders.map((folder) => parseInt(folder));
     const result = numbers.length ? Math.max(...numbers) + 1 : 0;
@@ -70,3 +60,14 @@ async function getLastFolderNumber() {
 
 // Create new folder
 createNewFolder(argFolderName);
+
+/*
+const contentCSS = `
+body {
+  background-color: #f0f0f0;
+}
+`;
+
+const contentJS = `
+console.log('Hola, mundo!');
+`;*/
