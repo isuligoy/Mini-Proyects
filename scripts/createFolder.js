@@ -21,7 +21,7 @@ const contentHTML = (folderName) => `
 </head>
 <body>
   <h1>Hola, mundo!</h1>
-  <script src="script.js"></script>
+  <script src="main.js"></script>
 </body>
 </html>
 `;
@@ -41,7 +41,6 @@ async function createNewFolder(folderName) {
     if (!folderName) {
         return console.error("Error: Debes proporcionar un nombre de carpeta.");
     }
-
     const lastFolderNumber = await getLastFolderNumber();
     const folder = path.join(publicPath, lastFolderNumber + "-" + folderName);
     try {
@@ -52,7 +51,7 @@ async function createNewFolder(folderName) {
                 contentHTML(folderName)
             ),
             fs.writeFile(path.join(folder, "styles.css"), contentCSS),
-            fs.writeFile(path.join(folder, "script.js"), contentJS),
+            fs.writeFile(path.join(folder, "main.js"), contentJS),
         ]);
     } catch (error) {
         console.error("Error", error);
