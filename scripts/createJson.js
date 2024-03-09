@@ -1,51 +1,47 @@
-import fs from "fs/promises";
-import path from "path";
-import { fileURLToPath } from "url";
-import { createRequire } from "module";
+import fs from "node:fs/promises";
+import path from "node:path";
+import { fileURLToPath } from "node:url";
 
-const require = createRequire(import.meta.url);
-const { readdir, stat } = require("fs").promises;
+const proyectsPath = {
+    realFolder: "projects/",
+    directoryPath: "../public/projects",
+    curretDirectory: "./scripts/",
+};
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
-const proyectosPath = path.join(__dirname, "../public/projects");
+const proyectosPath = path.join(__dirname, proyectsPath.directoryPath);
 
-const getProyectosData = async () => {
+const getProyectData = async () => {
     try {
-        const proyectos = await readdir(proyectosPath);
+        const projects = await fs.readdir(proyectosPath);
 
-        const proyectosData = await Promise.all(
-            proyectos.map(async (proyecto) => {
-                const proyectoPath = path.join(proyectosPath, proyecto);
-                const stats = await stat(proyectoPath);
-
-                return {
-                    nombre: proyecto,
-                    id: crypto.randomUUID(),
-                    url: proyectoPath,
-                    image: `1`,
-                    fecha_creacion: stats.birthtime,
-                };
-            })
-        );
-
-        return proyectosData;
+        const createProjectJSON = projects.map((project, index) => {
+            const { realFolder } = proyectsPath;
+            return {
+                name: project,
+                id: crypto.randomUUID(),
+                url: realFolder + project + "/index.html",
+                number: String(index + 1).padStart(2, "0"), //Shown take the firt 2 numbres
+                image: `1`,
+                fecha_creacion: "15-05-1600",
+            };
+        });
+        return createProjectJSON;
     } catch (error) {
-        console.error("Error al obtener datos de los proyectos:", error);
-        throw error;
+        console.error(error);
     }
 };
 
-const generarJSON = async () => {
+const generateJSONFile = async () => {
     try {
-        const proyectosData = await getProyectosData();
-        const jsonData = JSON.stringify(proyectosData, null, 2);
+        const projectsData = await getProyectData();
+        const jsonData = JSON.stringify(projectsData, null, 2);
 
-        await fs.writeFile("proyectos.json", jsonData);
-
-        console.log("Archivo JSON generado exitosamente.");
+        const { curretDirectory } = proyectsPath;
+        await fs.writeFile(curretDirectory + "projects.json", jsonData);
     } catch (error) {
-        console.error("Error al generar el archivo JSON:", error);
+        console.error(error);
     }
 };
 
-generarJSON();
+generateJSONFile();

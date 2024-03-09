@@ -19,19 +19,16 @@ const { title } = Astro.props;
 <style is:global>
     :root {
         /* Modificar */
-        --accent: 136, 58, 234;
-        --accent-light: 224, 204, 250;
-        --accent-dark: 49, 10, 101;
-        --accent-gradient: linear-gradient(
-            45deg,
-            rgb(var(--accent)),
-            rgb(var(--accent-light)) 30%,
-            white 60%
-        );
+        --card-color: hsl(222, 57%, 36%);
+        --card-color-light: hsl(227, 49%, 21%);
+        --highlight: hsl(345, 67%, 59%);
+        --baner-color: hsl(300, 9%, 96%);
+        --black: hsl(27, 10%, 17%);
     }
     html {
         font-family: system-ui, sans-serif;
-        background: #27292f;
-        /* background-size: 224px; */
+        /* background: #202020; */
+        /* background-color: hsl(300, 9%, 96%); */
+        background: var(--black);
     }
 </style>
