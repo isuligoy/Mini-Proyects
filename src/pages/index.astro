@@ -1,29 +1,21 @@
 ---
 import Layout from "@/layouts/Layout.astro";
-import { projects } from "@/../json/projects.json";
+import projects from "@scripts/projects.json";
 ---
 
 <Layout title="Projects">
     <h1>Projects</h1>
     <main class="link-card-grid">
-        <a href="/projects/01-Navbar/index.html">
-            <article class="link-card">
-                <div>1</div>
-                <h2>Nombre Proyecto</h2>
-            </article>
-        </a>
-        <a href="/projects/02-Cart-Shopping/index.html">
-            <article class="link-card">
-                <div>2</div>
-                <h2>Nombre Proyecto</h2>
-            </article>
-        </a>
-        <a href="">
-            <article class="link-card">
-                <div>3</div>
-                <h2>Nombre Proyecto</h2>
-            </article>
-        </a>
+        {
+            projects.map(({ name, url, id, number }) => (
+                <a href={url}>
+                    <article id={id} class="link-card">
+                        <div># {number}</div>
+                        <h2>{name}</h2>
+                    </article>
+                </a>
+            ))
+        }
     </main>
 </Layout>
 
@@ -43,7 +35,8 @@ import { projects } from "@/../json/projects.json";
         max-width: calc(100% - 2rem);
     }
     h1 {
-        background: #8e8e8e;
+        background: var(--baner-color);
+        color: var(--black);
         padding: 2rem 0;
         font-size: 4rem;
         font-weight: 700;
@@ -59,22 +52,20 @@ import { projects } from "@/../json/projects.json";
 
         & .link-card {
             display: flex;
-            background: hsl(54, 100%, 42%);
+            background: var(--card-color);
             padding: 0.5rem 1.5rem;
             border-radius: 25px;
             cursor: pointer;
 
             &:hover {
-                background: hsl(54, 100%, 32%);
+                background: var(--card-color-light);
+                transform: scale(1.05);
+                transition: all 0.3s ease;
             }
         }
 
-        & .link-card > h2,
-        .link-card > div {
-        }
-
         & .link-card > h2 {
-            font-size: 1.4rem;
+            font-size: 1.2rem;
             flex: 1;
             display: flex;
             align-items: center;
@@ -85,7 +76,7 @@ import { projects } from "@/../json/projects.json";
         .link-card > div {
             font-size: 1rem;
             font-weight: bold;
-            background-color: hsl(0, 56%, 57%);
+            background-color: var(--highlight);
             border-radius: 15px;
             padding: 0.8rem 1rem;
             display: flex;
