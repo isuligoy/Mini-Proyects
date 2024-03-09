@@ -1,13 +1,14 @@
 {
-    "name": "prueba",
+    "name": "mini-proyect",
+    "version": "0.0.0",
     "type": "module",
-    "version": "0.0.1",
     "scripts": {
         "dev": "astro dev",
-        "start": "astro dev",
+        "start": " astro dev",
         "build": "astro build",
         "preview": "astro preview",
-        "astro": "astro"
+        "astro": "astro",
+        "cf": "node scripts/createFolder.js"
     },
     "dependencies": {
         "astro": "4.4.0"
