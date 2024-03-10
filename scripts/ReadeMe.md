@@ -5,7 +5,7 @@
 | %{{number}}% | %{{link_page}}% | %{{link_code}}% |
 |     # 01     |  ![navbar](.)   | %{{link_code}}% |
 
-## USE CASES
+### USE CASES
 
 -   `npm run dev` mirar los proyectos en lista
 -   `npm run cf <name-folder-flag>` create folder, cera la carpeta con html/css/js para empezar a codear, agregando el nombre del proyecto
