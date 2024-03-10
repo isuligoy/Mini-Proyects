@@ -1,32 +1,66 @@
-import proyects from "./projects.json";
+import fs from "node:fs/promises";
+/*
+const getProyectNumber = () => {};
+*/
+const getProyectPageLink = (url) => {
+    return `[Link](${PLACEHOLDER.GITHUB_URL + url})`;
+};
+const getProyectCodeLink = (name) => {
+    return `[Link](${PLACEHOLDER.GITHUB_URL + name})`;
+};
 
 const PLACEHOLDER = {
     GITHUB_URL: "https://isuligoy.github.io/Mini-Proyects/",
-    PROYECT_NUMBER: "%{{number}}%",
+    TEMPLATE: "%{{table_templete}}%",
+    /* PROYECT_NUMBER: "%{{number}}%",
     LINK_PAGE: "%{{link_page}}%",
-    LINK_CODE: "%{{link_code}}%",
+    LINK_CODE: "%{{link_code}}%",*/
 };
 
-const tableTemplete = ({ PROYECT_NUMBER, LINK_PAGE, LINK_CODE }) => `<table>
-<tr>
-    <th>Number</th>
-    <th>Page</th>
-    <th>Code</th>
-</tr>
-<tr>
-    <td>${PROYECT_NUMBER}</td>
-    <td>${LINK_PAGE}</td>
-    <td>${LINK_CODE}</td>
-</tr>
-</table>`;
-
-const getProyectNumber = () => {};
-const getProyectPageLink = () => {};
-const getProyectCodeLink = () => {};
-
-const generateTable = () => {
-    proyects.map((proyect) => {
-        const { name, number, url } = proyect;
-    });
+const tableTemplete = (proyects) => {
+    const table = `| Number | Proyecto Name | Page | Code |\n| :----: |  :----: |  :----: | :----: |\n${generateTable(
+        proyects
+    )}`;
+    return table;
 };
-generateTable();
+
+const generateTable = (proyects) => {
+    const tableDataRows = proyects
+        .map(({ name, number, url }) => {
+            return `| # ${number} | ${name} | ${getProyectPageLink(
+                name
+            )} | ${getProyectCodeLink(url)} |`;
+        })
+        .join("\n");
+    return tableDataRows;
+};
+
+async function readJson() {
+    try {
+        const jsonData = await fs.readFile("./scripts/projects.json");
+        const proyects = await JSON.parse(jsonData);
+        const tableWriten = tableTemplete(proyects);
+        writeReadMe(tableWriten);
+    } catch (error) {
+        console.error(error);
+    }
+}
+
+async function writeReadMe(tableWriten) {
+    try {
+        const getTemplateMarkdown = await fs.readFile(
+            "./scripts/README.md.tpl",
+            {
+                encoding: "utf-8",
+            }
+        );
+        const newMarkDown = getTemplateMarkdown.replace(
+            PLACEHOLDER.TEMPLATE,
+            tableWriten
+        );
+        await fs.writeFile("ReadMe.md", newMarkDown);
+    } catch (error) {
+        console.error(error);
+    }
+}
+readJson();
