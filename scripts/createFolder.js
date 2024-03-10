@@ -26,6 +26,21 @@ const contentHTML = (folderName) => `
 </html>
 `;
 
+const contentCSS = `
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: system-ui, sans-serif;
+}
+`;
+
+const contentJS = `
+console.log('Hola, mundo!');
+`;
+
 //Create the folder
 async function createNewFolder(folderName) {
     if (!folderName) {
@@ -40,8 +55,8 @@ async function createNewFolder(folderName) {
                 path.join(folder, "index.html"),
                 contentHTML(folderName)
             ),
-            fs.writeFile(path.join(folder, "styles.css")),
-            fs.writeFile(path.join(folder, "main.js")),
+            fs.writeFile(path.join(folder, "styles.css"), contentCSS),
+            fs.writeFile(path.join(folder, "main.js"), contentJS),
         ]);
     } catch (error) {
         console.error("Error", error);
@@ -60,14 +75,3 @@ export async function getLastFolderNumber() {
 
 // Create new folder
 createNewFolder(argFolderName);
-
-/*
-const contentCSS = `
-body {
-  background-color: #f0f0f0;
-}
-`;
-
-const contentJS = `
-console.log('Hola, mundo!');
-`;*/

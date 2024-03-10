@@ -1,10 +1,10 @@
 # MINI PROYECTS - TABLE DE PROYECYOS
 
-| Number |    Proyecto Name     |                                 Page                                  |                                           Code                                            |
-| :----: | :------------------: | :-------------------------------------------------------------------: | :---------------------------------------------------------------------------------------: |
-|  # 01  |      01-Navbar       |      [Link](https://isuligoy.github.io/Mini-Proyects/01-Navbar)       |      [Link](https://isuligoy.github.io/Mini-Proyects/projects/01-Navbar/index.html)       |
-|  # 02  |   02-Cart-Shopping   |   [Link](https://isuligoy.github.io/Mini-Proyects/02-Cart-Shopping)   |   [Link](https://isuligoy.github.io/Mini-Proyects/projects/02-Cart-Shopping/index.html)   |
-|  # 03  | 03-Aside-Section-Buy | [Link](https://isuligoy.github.io/Mini-Proyects/03-Aside-Section-Buy) | [Link](https://isuligoy.github.io/Mini-Proyects/projects/03-Aside-Section-Buy/index.html) |
+| Number | Proyecto Name | Page | Code |
+| :----: |  :----: |  :----: | :----: |
+| # 01 | 01-Side-Navbar | [Link](https://isuligoy.github.io/Mini-Proyects/01-Side-Navbar) | [Link](https://isuligoy.github.io/Mini-Proyects/projects/01-Side-Navbar/index.html) |
+| # 02 | 02-Cart-Shopping | [Link](https://isuligoy.github.io/Mini-Proyects/02-Cart-Shopping) | [Link](https://isuligoy.github.io/Mini-Proyects/projects/02-Cart-Shopping/index.html) |
+| # 03 | 03-DropDown | [Link](https://isuligoy.github.io/Mini-Proyects/03-DropDown) | [Link](https://isuligoy.github.io/Mini-Proyects/projects/03-DropDown/index.html) |
 
 ### USE CASES
 
