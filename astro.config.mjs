@@ -10,7 +10,8 @@ import { defineConfig } from "astro/config";
 // const base = mode === "production" && isGitHubPages ? "/" + folderName : "/";
 
 export default defineConfig({
-    site: "https://isuligoy.github.io/Mini-Proyects/",
+    site: "https://isuligoy.github.io",
+    base: "/Mini-Proyects",
     root: "./",
     // base,
     // mode,
