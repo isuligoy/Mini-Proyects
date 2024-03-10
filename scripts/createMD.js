@@ -1,4 +1,4 @@
-import proyects from "@scripts/projects.json";
+import proyects from "./projects.json";
 
 const PLACEHOLDER = {
     GITHUB_URL: "https://isuligoy.github.io/Mini-Proyects/",
