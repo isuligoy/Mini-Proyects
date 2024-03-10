@@ -1,4 +1,5 @@
 import { defineConfig } from "astro/config";
+
 // https://astro.build/config
 import path from "node:path";
 
@@ -9,11 +10,17 @@ const mode =
 const base = mode === "production" && isGitHubPages ? "/" + folderName : "/";
 
 export default defineConfig({
+    site: "https://atomcowork.github.io",
     root: "./",
     base,
     mode,
     envDir: "./",
     publicDir: "./public",
+    resolve: {
+        alias: {
+            "@": new URL("./src", import.meta.url).pathname,
+        },
+    },
     build: {
         outDir: "./dist",
         assetsDir: "./",
