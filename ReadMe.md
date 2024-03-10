@@ -1,9 +1,24 @@
 # MINI PROYECTS - TABLE DE PROYECYOS
 
+%{{table_templete}}%
+
 |    Number    |                   Page                    |                   Code                    |
 | :----------: | :---------------------------------------: | :---------------------------------------: |
-| %{{number}}% |              %{{link_page}}%              |              %{{link_code}}%              |
+| %{{number}}% |              %{{link_page}}%              |              %{{link_page}}%              |
 |     # 01     | [Link Page](./public/projects/01-Navbar/) | [Link Code](./public/projects/01-Navbar/) |
+
+<table>
+    <tr>
+        <th>Number</th>
+        <th>Page</th>
+        <th>Code</th>
+    </tr>
+    <tr>
+        <td>%{{number}}%</td>
+        <td>%{{link_page}}%</td>
+        <td>%{{link_page}}%</td>
+    </tr>
+</table>
 
 ## USE CASES
 
