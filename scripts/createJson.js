@@ -21,7 +21,8 @@ const getProyectData = async () => {
                 name: project,
                 id: crypto.randomUUID(),
                 url: realFolder + project + "/index.html",
-                number: String(index + 1).padStart(2, "0"), //Shown take the firt 2 numbres
+                //Shown take the firt 2 numbres - Si se borra un proyecto que agregue ese numero
+                number: String(index + 1).padStart(2, "0"),
                 image: `1`,
                 fecha_creacion: "15-05-1600",
             };
