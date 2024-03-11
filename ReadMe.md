@@ -2,11 +2,11 @@
 
 | Number | Proyecto Name | Page | Code |
 | :----: |  :----: |  :----: | :----: |
-| # 01 | 01-Side-Navbar | [Link](https://github.com/isuligoy/Mini-Proyects/projects/01-Side-Navbar/index.html)| [Link](https://github.com/isuligoy/Mini-Proyects/tree/main/public/01-Side-Navbar) |
-| # 02 | 02-Cart-Shopping | [Link](https://github.com/isuligoy/Mini-Proyects/projects/02-Cart-Shopping/index.html)| [Link](https://github.com/isuligoy/Mini-Proyects/tree/main/public/02-Cart-Shopping) |
-| # 03 | 03-DropDown | [Link](https://github.com/isuligoy/Mini-Proyects/projects/03-DropDown/index.html)| [Link](https://github.com/isuligoy/Mini-Proyects/tree/main/public/03-DropDown) |
-| # 04 | 04-Galery | [Link](https://github.com/isuligoy/Mini-Proyects/projects/04-Galery/index.html)| [Link](https://github.com/isuligoy/Mini-Proyects/tree/main/public/04-Galery) |
-| # 05 | 05-Image-accordion | [Link](https://github.com/isuligoy/Mini-Proyects/projects/05-Image-accordion/index.html)| [Link](https://github.com/isuligoy/Mini-Proyects/tree/main/public/05-Image-accordion) |
+| # 01 | 01-Side-Navbar | [Link](https://github.com/isuligoy/Mini-Proyects/projects/01-Side-Navbar/index.html)| [Link](https://github.com/isuligoy/Mini-Proyects/tree/main/public/projects/01-Side-Navbar) |
+| # 02 | 02-Cart-Shopping | [Link](https://github.com/isuligoy/Mini-Proyects/projects/02-Cart-Shopping/index.html)| [Link](https://github.com/isuligoy/Mini-Proyects/tree/main/public/projects/02-Cart-Shopping) |
+| # 03 | 03-DropDown | [Link](https://github.com/isuligoy/Mini-Proyects/projects/03-DropDown/index.html)| [Link](https://github.com/isuligoy/Mini-Proyects/tree/main/public/projects/03-DropDown) |
+| # 04 | 04-Galery | [Link](https://github.com/isuligoy/Mini-Proyects/projects/04-Galery/index.html)| [Link](https://github.com/isuligoy/Mini-Proyects/tree/main/public/projects/04-Galery) |
+| # 05 | 05-Image-accordion | [Link](https://github.com/isuligoy/Mini-Proyects/projects/05-Image-accordion/index.html)| [Link](https://github.com/isuligoy/Mini-Proyects/tree/main/public/projects/05-Image-accordion) |
 
 ### USE CASES
 

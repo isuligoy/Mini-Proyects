@@ -10,7 +10,8 @@ const getProyectNameLink = (name) => {
 };
 
 const PLACEHOLDER = {
-    GITHUB_PAGE: "https://github.com/isuligoy/Mini-Proyects/tree/main/public/",
+    GITHUB_PAGE:
+        "https://github.com/isuligoy/Mini-Proyects/tree/main/public/projects/",
     GITHUB_URL: "https://github.com/isuligoy/Mini-Proyects/",
     TEMPLATE: "%{{table_templete}}%",
     /* PROYECT_NUMBER: "%{{number}}%",
