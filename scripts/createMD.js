@@ -2,10 +2,10 @@ import fs from "node:fs/promises";
 /*
 const getProyectNumber = () => {};
 */
-const getProyectPageLink = (url) => {
+const getProyectUrlLink = (url) => {
     return `[Link](${PLACEHOLDER.GITHUB_URL + url})`;
 };
-const getProyectCodeLink = (name) => {
+const getProyectNameLink = (name) => {
     return `[Link](${PLACEHOLDER.GITHUB_PAGE + name})`;
 };
 
@@ -28,9 +28,9 @@ const tableTemplete = (proyects) => {
 const generateTable = (proyects) => {
     const tableDataRows = proyects
         .map(({ name, number, url }) => {
-            return `| # ${number} | ${name} | ${getProyectPageLink(
-                name
-            )} | ${getProyectCodeLink(url)} |`;
+            return `| # ${number} | ${name} | ${getProyectUrlLink(
+                url
+            )}| ${getProyectNameLink(name)} |`;
         })
         .join("\n");
     return tableDataRows;
