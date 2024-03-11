@@ -6,11 +6,12 @@ const getProyectPageLink = (url) => {
     return `[Link](${PLACEHOLDER.GITHUB_URL + url})`;
 };
 const getProyectCodeLink = (name) => {
-    return `[Link](${PLACEHOLDER.GITHUB_URL + name})`;
+    return `[Link](${PLACEHOLDER.GITHUB_PAGE + name})`;
 };
 
 const PLACEHOLDER = {
-    GITHUB_URL: "https://isuligoy.github.io/Mini-Proyects/",
+    GITHUB_PAGE: "https://isuligoy.github.io/Mini-Proyects/",
+    GITHUB_URL: "https://github.com/isuligoy/Mini-Proyects/",
     TEMPLATE: "%{{table_templete}}%",
     /* PROYECT_NUMBER: "%{{number}}%",
     LINK_PAGE: "%{{link_page}}%",
