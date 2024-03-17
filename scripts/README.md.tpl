@@ -11,3 +11,5 @@
 -   `cjandcrm` Convinacion entre _npm run cj_ && _npm run crm_
 
 - [![Deploy to GitHub Pages](https://github.com/isuligoy/Mini-Proyects/actions/workflows/deploy.yml/badge.svg?event=workflow_run)](https://github.com/isuligoy/Mini-Proyects/actions/workflows/deploy.yml)
+- [![Deploy to GitHub Pages](https://github.com/isuligoy/Mini-Proyects/actions/workflows/deploy.yml/badge.svg?event=create)](https://github.com/isuligoy/Mini-Proyects/actions/workflows/deploy.yml)
+- [![Deploy to GitHub Pages](https://github.com/isuligoy/Mini-Proyects/actions/workflows/deploy.yml/badge.svg?event=page_build)](https://github.com/isuligoy/Mini-Proyects/actions/workflows/deploy.yml)
