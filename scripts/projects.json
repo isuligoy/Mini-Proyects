@@ -1,7 +1,7 @@
 [
   {
     "name": "01-Side-Navbar",
-    "id": "8a872e51-9ac5-40a1-80a8-2807f4058bc5",
+    "id": "6d3ca23f-cb40-4e9b-ba5b-3e09e634a5f2",
     "url": "projects/01-Side-Navbar/index.html",
     "number": "01",
     "image": "1",
@@ -9,7 +9,7 @@
   },
   {
     "name": "02-Cart-Shopping",
-    "id": "b2867909-66d8-4d31-8037-0b9838d19518",
+    "id": "9e5da913-8f5e-496c-b4c9-7f396938bec4",
     "url": "projects/02-Cart-Shopping/index.html",
     "number": "02",
     "image": "1",
@@ -17,7 +17,7 @@
   },
   {
     "name": "03-DropDown",
-    "id": "3c8f55c3-4b7e-428b-a814-6ef82907eabf",
+    "id": "43b67e7c-f5bb-4a2d-becc-1d9a34d39516",
     "url": "projects/03-DropDown/index.html",
     "number": "03",
     "image": "1",
@@ -25,7 +25,7 @@
   },
   {
     "name": "04-Galery",
-    "id": "5a0e7081-9586-49f7-a592-9a56a10b53de",
+    "id": "5ecbb7aa-ff59-41d7-8df1-8f46847d1d3b",
     "url": "projects/04-Galery/index.html",
     "number": "04",
     "image": "1",
@@ -33,9 +33,25 @@
   },
   {
     "name": "05-Image-accordion",
-    "id": "cd4946d1-a5e4-4671-8b31-814e6aeac9f6",
+    "id": "bfa67156-1275-4e03-8fd5-f242054ab540",
     "url": "projects/05-Image-accordion/index.html",
     "number": "05",
+    "image": "1",
+    "fecha_creacion": "15-05-1600"
+  },
+  {
+    "name": "06-Input-Float-Label",
+    "id": "1b4f9fea-242b-482d-acab-c1356f78b59f",
+    "url": "projects/06-Input-Float-Label/index.html",
+    "number": "06",
+    "image": "1",
+    "fecha_creacion": "15-05-1600"
+  },
+  {
+    "name": "07-Cards-hover",
+    "id": "244948aa-ab8e-42fb-98ea-2f205ba3c87e",
+    "url": "projects/07-Cards-hover/index.html",
+    "number": "07",
     "image": "1",
     "fecha_creacion": "15-05-1600"
   }
