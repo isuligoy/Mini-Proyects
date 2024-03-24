@@ -1,7 +1,7 @@
 [
   {
     "name": "01-Side-Navbar",
-    "id": "6d3ca23f-cb40-4e9b-ba5b-3e09e634a5f2",
+    "id": "96ad9eff-76b8-4460-8399-4b6491f0eb55",
     "url": "projects/01-Side-Navbar/index.html",
     "number": "01",
     "image": "1",
@@ -9,7 +9,7 @@
   },
   {
     "name": "02-Cart-Shopping",
-    "id": "9e5da913-8f5e-496c-b4c9-7f396938bec4",
+    "id": "0fa5b11f-0a7a-48f9-b4d8-47b0e614cab9",
     "url": "projects/02-Cart-Shopping/index.html",
     "number": "02",
     "image": "1",
@@ -17,7 +17,7 @@
   },
   {
     "name": "03-DropDown",
-    "id": "43b67e7c-f5bb-4a2d-becc-1d9a34d39516",
+    "id": "ddc5edaf-dd00-453a-828b-a4929ccc710f",
     "url": "projects/03-DropDown/index.html",
     "number": "03",
     "image": "1",
@@ -25,7 +25,7 @@
   },
   {
     "name": "04-Galery",
-    "id": "5ecbb7aa-ff59-41d7-8df1-8f46847d1d3b",
+    "id": "e42567ca-14cc-4a83-84bd-5bfcde948377",
     "url": "projects/04-Galery/index.html",
     "number": "04",
     "image": "1",
@@ -33,7 +33,7 @@
   },
   {
     "name": "05-Image-accordion",
-    "id": "bfa67156-1275-4e03-8fd5-f242054ab540",
+    "id": "4d4bb839-9b37-4db4-84ea-6e96d751c714",
     "url": "projects/05-Image-accordion/index.html",
     "number": "05",
     "image": "1",
@@ -41,7 +41,7 @@
   },
   {
     "name": "06-Input-Float-Label",
-    "id": "1b4f9fea-242b-482d-acab-c1356f78b59f",
+    "id": "5f489d33-1ef7-44aa-be0f-5085cc301ecd",
     "url": "projects/06-Input-Float-Label/index.html",
     "number": "06",
     "image": "1",
@@ -49,9 +49,25 @@
   },
   {
     "name": "07-Cards-hover",
-    "id": "244948aa-ab8e-42fb-98ea-2f205ba3c87e",
+    "id": "5206b5e4-b88c-446a-ac75-2adf9601992f",
     "url": "projects/07-Cards-hover/index.html",
     "number": "07",
+    "image": "1",
+    "fecha_creacion": "15-05-1600"
+  },
+  {
+    "name": "08-Landing-page-hero",
+    "id": "e210f032-7982-4bef-9ff0-03f196c39702",
+    "url": "projects/08-Landing-page-hero/index.html",
+    "number": "08",
+    "image": "1",
+    "fecha_creacion": "15-05-1600"
+  },
+  {
+    "name": "09-Clock-Countdown",
+    "id": "fec08cd8-6a07-4308-9d59-60c22d72ac24",
+    "url": "projects/09-Clock-Countdown/index.html",
+    "number": "09",
     "image": "1",
     "fecha_creacion": "15-05-1600"
   }
