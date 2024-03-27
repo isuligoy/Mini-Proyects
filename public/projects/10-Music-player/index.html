@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Music-player</title>
+        <link rel="stylesheet" href="styles.css" />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+            integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
+    </head>
+    <body>
+        <div class="phone">
+            <div class="header-container">
+                <svg class="arrow-down">
+                    <use href="../../assets/svg/icons.svg#arrow_angle-down" />
+                </svg>
+                <span class="playlist-title">Radio Lofi Watiter</span>
+                <svg class="more-icon">
+                    <use href="../../assets/svg/icons.svg#dots-horizontal" />
+                </svg>
+            </div>
+            <div class="connection-container">
+                <svg class="header-icon">
+                    <use href="../../assets/svg/icons.svg#headphones" />
+                </svg>
+                <span class="connection">Connect to Airpods Pro</span>
+            </div>
+            <div class="cover-container">
+                <img class="song-image" src="../../assets/photo4.jpg" alt="" />
+                <svg>
+                    <circle cy="130" r="120"></circle>
+                    <circle cy="130" r="120"></circle>
+                </svg>
+                <svg class="none-line-container">
+                    <circle class="none-line" cy="130" r="120"></circle>
+                </svg>
+                <div class="timer">
+                    <span>2:28</span>
+                    <span>-0:52</span>
+                </div>
+            </div>
+            <div class="bottom-container">
+                <div class="controller-container">
+                    <svg class="skip-icon">
+                        <use href="../../assets/svg/icons.svg#skip-prev" />
+                    </svg>
+                    <svg class="play-icon">
+                        <use href="../../assets/svg/icons.svg#play" />
+                    </svg>
+                    <svg class="skip-icon">
+                        <use href="../../assets/svg/icons.svg#skip-next" />
+                    </svg>
+                </div>
+                <div class="item-container">
+                    <svg class="">
+                        <use href="../../assets/svg/icons.svg#chromcast" />
+                    </svg>
+                    <svg class="">
+                        <use href="../../assets/svg/icons.svg#share" />
+                    </svg>
+                </div>
+            </div>
+        </div>
+
+        <!-- PLAYLIST -->
+        <div class="phone">
+            <div class="playlist-image">
+                <svg class="arrow-down">
+                    <use href="../../assets/svg/icons.svg#arrow_angle-down" />
+                </svg>
+                <img src="../../assets/photo5.jpg" alt="" />
+            </div>
+            <div class="playlist-info">
+                <span class="playlist-title"> Radio Lofi Waiter </span>
+                <span class="playlist-author"> Created by Lofi Waiter </span>
+            </div>
+            <div class="song-list-container" id="songs">
+                <div class="song-container">
+                    <div class="song-info">
+                        <span class="song-title">Walking in Ueno</span>
+                        <span class="song-author">Lofi Waiter</span>
+                    </div>
+                    <svg class="more-icon">
+                        <use
+                            href="../../assets/svg/icons.svg#dots-horizontal"
+                        />
+                    </svg>
+                </div>
+            </div>
+        </div>
+    </body>
+    <script>
+        const songs = [
+            {
+                title: "Walking in Ueno",
+                author: "Lofi Waiter",
+            },
+            {
+                title: "The Girl Who Fell from the Sky",
+                author: "Otaku, LoFi Waiter",
+            },
+            {
+                title: "Lofi Rain",
+                author: "Chilled Cougar, LoFi Waiter",
+            },
+            {
+                title: "Crystal Haze",
+                author: "Sleepy Tom",
+            },
+            {
+                title: "Walking On The Clouds",
+                author: "Sleepy Tom",
+            },
+        ];
+
+        const song = document.querySelector("#songs");
+
+        for (let i = 0; i < songs.length; i++) {
+            const songContainer = document.createElement("div");
+            songContainer.classList.add("song-container");
+            songContainer.innerHTML = `
+                    <div class="song-info">
+                        <span class="song-title">${songs[i].title}</span>
+                        <span class="song-author">${songs[i].author}</span>
+                    </div>
+                    <svg class="more-icon">
+                        <use
+                            href="../../assets/svg/icons.svg#dots-horizontal"
+                        />
+                    </svg>
+            `;
+            song.appendChild(songContainer);
+        }
+    </script>
+</html>
