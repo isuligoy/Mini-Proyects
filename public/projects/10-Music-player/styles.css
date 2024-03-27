@@ -218,6 +218,12 @@ body {
 }
 .song-list-container {
     padding: 0 25px;
+    height: 220px;
+    overflow-y: scroll;
+
+    &::-webkit-scrollbar {
+        display: none;
+    }
 
     & .song-container {
         display: flex;
