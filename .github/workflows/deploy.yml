@@ -39,5 +39,6 @@ jobs:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
-        node-version: 20
+        with:
+        node-version: 20 
         package-manager: pnpm@latest
