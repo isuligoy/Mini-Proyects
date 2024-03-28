@@ -5,7 +5,12 @@ export async function getDate() {
     try {
         const data = await fetch(link);
         const info = await data.json();
-        const date = info.workflow_runs[0].created_at;
+
+        const conclusion = info.workflow_runs.find(
+            (info) => info.conclusion === "success"
+        );
+        const date = conclusion.created_at;
+
         return formatedDate({ date });
     } catch (err) {
         console.log(err);
@@ -19,5 +24,19 @@ export default function formatedDate({ date }) {
     const año = newDate.getFullYear();
 
     const fechaFormateada = `${dia}/${mes}/${año}`;
+
     return fechaFormateada;
 }
+getDate();
+// for (let index = 0; index < info.workflow_runs.length; index++) {
+//     const info = info.workflow_runs[index];
+//     if (
+//         info.conclusion === "failure" &&
+//         info.conclusion !== "failure"
+//     ) {
+//         break;
+//     }
+//     const date = info.created_at;
+//     console.log(date);
+//     return formatedDate({ date });
+// }
