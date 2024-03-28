@@ -1,7 +1,7 @@
 [
   {
     "name": "01-Side-Navbar",
-    "id": "96ad9eff-76b8-4460-8399-4b6491f0eb55",
+    "id": "1bf2aca3-c592-4943-aced-641f64607075",
     "url": "projects/01-Side-Navbar/index.html",
     "number": "01",
     "image": "1",
@@ -9,7 +9,7 @@
   },
   {
     "name": "02-Cart-Shopping",
-    "id": "0fa5b11f-0a7a-48f9-b4d8-47b0e614cab9",
+    "id": "7b8d1222-0abd-4972-af46-3e7a525fee6c",
     "url": "projects/02-Cart-Shopping/index.html",
     "number": "02",
     "image": "1",
@@ -17,7 +17,7 @@
   },
   {
     "name": "03-DropDown",
-    "id": "ddc5edaf-dd00-453a-828b-a4929ccc710f",
+    "id": "0bb568cc-c263-40e5-977e-41291b0d5143",
     "url": "projects/03-DropDown/index.html",
     "number": "03",
     "image": "1",
@@ -25,7 +25,7 @@
   },
   {
     "name": "04-Galery",
-    "id": "e42567ca-14cc-4a83-84bd-5bfcde948377",
+    "id": "5621564c-b594-4c5f-b2d7-a65f05fa656c",
     "url": "projects/04-Galery/index.html",
     "number": "04",
     "image": "1",
@@ -33,7 +33,7 @@
   },
   {
     "name": "05-Image-accordion",
-    "id": "4d4bb839-9b37-4db4-84ea-6e96d751c714",
+    "id": "ac10211c-6783-446b-bc27-b603a345b7cd",
     "url": "projects/05-Image-accordion/index.html",
     "number": "05",
     "image": "1",
@@ -41,7 +41,7 @@
   },
   {
     "name": "06-Input-Float-Label",
-    "id": "5f489d33-1ef7-44aa-be0f-5085cc301ecd",
+    "id": "e7505e8b-668e-44f6-94de-996b1801c517",
     "url": "projects/06-Input-Float-Label/index.html",
     "number": "06",
     "image": "1",
@@ -49,7 +49,7 @@
   },
   {
     "name": "07-Cards-hover",
-    "id": "5206b5e4-b88c-446a-ac75-2adf9601992f",
+    "id": "210ba576-1c1b-42f2-bf05-60caac251459",
     "url": "projects/07-Cards-hover/index.html",
     "number": "07",
     "image": "1",
@@ -57,7 +57,7 @@
   },
   {
     "name": "08-Landing-page-hero",
-    "id": "e210f032-7982-4bef-9ff0-03f196c39702",
+    "id": "99850cb1-e219-4a56-ab5a-e20ec4bf4944",
     "url": "projects/08-Landing-page-hero/index.html",
     "number": "08",
     "image": "1",
@@ -65,9 +65,25 @@
   },
   {
     "name": "09-Clock-Countdown",
-    "id": "fec08cd8-6a07-4308-9d59-60c22d72ac24",
+    "id": "74149ed8-6216-4ef7-8a78-c8bdb486a92b",
     "url": "projects/09-Clock-Countdown/index.html",
     "number": "09",
+    "image": "1",
+    "fecha_creacion": "15-05-1600"
+  },
+  {
+    "name": "10-Music-player",
+    "id": "d70d9895-e77e-4d06-b6fb-de1ae0fac8b8",
+    "url": "projects/10-Music-player/index.html",
+    "number": "10",
+    "image": "1",
+    "fecha_creacion": "15-05-1600"
+  },
+  {
+    "name": "11-Hover-images",
+    "id": "9af6b662-7aaf-4161-97c3-54b982a703f4",
+    "url": "projects/11-Hover-images/index.html",
+    "number": "11",
     "image": "1",
     "fecha_creacion": "15-05-1600"
   }
