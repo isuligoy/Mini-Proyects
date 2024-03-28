@@ -45,16 +45,12 @@ async function readJson() {
         const jsonData = await fs.readFile("./scripts/projects.json");
         const proyects = await JSON.parse(jsonData);
         const tableWritten = tableTemplete(proyects);
-        writeReadMe({ dataToWritten: tableWritten });
-    } catch (error) {
-        console.error(error);
-    }
-}
 
-async function readLastDeploy() {
-    try {
         const newDateWriten = await getDate();
-        writeReadMe({ deteToWritten: newDateWriten });
+        writeReadMe({
+            dataToWritten: tableWritten,
+            deteToWritten: newDateWriten,
+        });
     } catch (error) {
         console.error(error);
     }
@@ -80,4 +76,3 @@ async function writeReadMe({ dataToWritten, deteToWritten }) {
 }
 
 readJson();
-readLastDeploy();
