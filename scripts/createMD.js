@@ -4,7 +4,7 @@ const getProyectCodeLink = (url) => {
     return BADGES.LINK_CODE(PLACEHOLDER.GITHUB_URL + url);
 };
 const getProyectPageLink = (name) => {
-    return BADGES.LINK_PAGE(PLACEHOLDER.GITHUB_URL + name);
+    return BADGES.LINK_PAGE(PLACEHOLDER.GITHUB_PAGE + name);
 };
 
 const PLACEHOLDER = {
@@ -53,7 +53,7 @@ async function readJson() {
 
 async function readLastDeploy() {
     try {
-        const newDateWriten = getDate();
+        const newDateWriten = await getDate();
         writeReadMe({ deteToWritten: newDateWriten });
     } catch (error) {
         console.error(error);
