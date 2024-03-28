@@ -15,10 +15,9 @@ permissions:
   id-token: write
 
 jobs:
-  publish:
-    if: contains(github.event.head_commit.message, '[gh-page]')
   build:
     runs-on: ubuntu-latest
+    if: "contains(github.event.head_commit.message, '[gh-page]')"
     steps:
       - name: Checkout your repository using git
         uses: actions/checkout@v4
@@ -32,6 +31,7 @@ jobs:
   deploy:
     needs: build
     runs-on: ubuntu-latest
+    if: "contains(github.event.head_commit.message, '[gh-page]')"
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
