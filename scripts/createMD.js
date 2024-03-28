@@ -1,4 +1,5 @@
 import fs from "node:fs/promises";
+import { getDate } from "./getDateForAction.js";
 const getProyectCodeLink = (url) => {
     return BADGES.LINK_CODE(PLACEHOLDER.GITHUB_URL + url);
 };
@@ -43,14 +44,23 @@ async function readJson() {
     try {
         const jsonData = await fs.readFile("./scripts/projects.json");
         const proyects = await JSON.parse(jsonData);
-        const tableWriten = tableTemplete(proyects);
-        writeReadMe(tableWriten);
+        const tableWritten = tableTemplete(proyects);
+        writeReadMe({ dataToWritten: tableWritten });
     } catch (error) {
         console.error(error);
     }
 }
 
-async function writeReadMe(tableWriten) {
+async function readLastDeploy() {
+    try {
+        const newDateWriten = getDate();
+        writeReadMe({ dataToWritten: newDateWriten });
+    } catch (error) {
+        console.error(error);
+    }
+}
+
+async function writeReadMe({ dataToWritten }) {
     try {
         const getTemplateMarkdown = await fs.readFile(
             "./scripts/README.md.tpl",
@@ -58,13 +68,16 @@ async function writeReadMe(tableWriten) {
                 encoding: "utf-8",
             }
         );
-        const newMarkDown = getTemplateMarkdown.replace(
-            PLACEHOLDER.TEMPLATE_TABLE,
-            tableWriten
-        );
+        // Add new project table
+        const newMarkDown = getTemplateMarkdown
+            .replace(PLACEHOLDER.TEMPLATE_TABLE, dataToWritten)
+            .replace(PLACEHOLDER.TEMPLATE_DATE, dataToWritten);
+
         await fs.writeFile("ReadMe.md", newMarkDown);
     } catch (error) {
         console.error(error);
     }
 }
+
 readJson();
+readLastDeploy();
