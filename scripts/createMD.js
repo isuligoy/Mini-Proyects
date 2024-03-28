@@ -54,13 +54,13 @@ async function readJson() {
 async function readLastDeploy() {
     try {
         const newDateWriten = getDate();
-        writeReadMe({ dataToWritten: newDateWriten });
+        writeReadMe({ deteToWritten: newDateWriten });
     } catch (error) {
         console.error(error);
     }
 }
 
-async function writeReadMe({ dataToWritten }) {
+async function writeReadMe({ dataToWritten, deteToWritten }) {
     try {
         const getTemplateMarkdown = await fs.readFile(
             "./scripts/README.md.tpl",
@@ -71,7 +71,7 @@ async function writeReadMe({ dataToWritten }) {
         // Add new project table
         const newMarkDown = getTemplateMarkdown
             .replace(PLACEHOLDER.TEMPLATE_TABLE, dataToWritten)
-            .replace(PLACEHOLDER.TEMPLATE_DATE, dataToWritten);
+            .replace(PLACEHOLDER.TEMPLATE_DATE, deteToWritten);
 
         await fs.writeFile("ReadMe.md", newMarkDown);
     } catch (error) {
