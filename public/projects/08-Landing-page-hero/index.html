@@ -3,16 +3,19 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <script src="../../assets/fontAwesome.js"></script>
+        <script src="./Footer/footer-navigation.js" defer></script>
         <title>Landing-page-hero</title>
         <link rel="stylesheet" href="styles.css" />
     </head>
     <body>
+        <footer-navigation></footer-navigation>
         <div class="container">
             <nav>
                 <ul class="nav__links">
                     <div>
-                        <li>
-                            <img src="./logo.png" alt="" />
+                        <li class="logo">
+                            <i class="fa-regular fa-square"></i>
                         </li>
                         <li><a href="#">ABOURT</a></li>
                         <li><a href="#">WEDDING</a></li>
@@ -29,34 +32,19 @@
                 <button>
                     OUR OFERES
                     <span>
-                        <svg
-                            aria-hidden="true"
-                            xmlns="http://www.w3.org/2000/svg"
-                            width="24"
-                            height="24"
-                            fill="none"
-                            viewBox="0 0 24 24"
-                        >
-                            <path
-                                stroke="currentColor"
-                                stroke-linecap="round"
-                                stroke-linejoin="round"
-                                stroke-width="2"
-                                d="M19 12H5m14 0-4 4m4-4-4-4"
-                            />
-                        </svg>
+                        <i class="fa-solid fa-arrow-right"></i>
                     </span>
                 </button>
                 <div class="scroll__button">
                     <a href="#">
-                        <span><img src="./scroll.svg" alt="" /></span>
+                        <span><i class="fa-solid fa-computer-mouse"></i></span>
                         SCROLL
                     </a>
                 </div>
                 <div class="socials">
-                    <a href="#"><img src="./dribble.svg" alt="" /></a>
-                    <a href="#"><img src="./facebook.svg" alt="" /></a>
-                    <a href="#"><img src="./youtube.svg" alt="" /></a>
+                    <a href="#"><i class="fa-brands fa-dribbble"></i></a>
+                    <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                    <a href="#"><i class="fa-brands fa-square-facebook"></i></a>
                 </div>
             </section>
         </div>
