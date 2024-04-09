@@ -16,6 +16,7 @@ const contentHTML = (folderName) => `
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="../../assets/fontAwesome.js"></script>
   <title>${folderName}</title>
   <link rel="stylesheet" href="styles.css">
 </head>
@@ -27,9 +28,7 @@ const contentHTML = (folderName) => `
 `;
 
 const contentCSS = `
-*,
-*::before,
-*::after {
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
