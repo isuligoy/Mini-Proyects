@@ -1,7 +1,7 @@
 import fs from "node:fs/promises";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
-import { uudi } from "node:crypto";
+import crypto from "node:crypto";
 
 const PROYECTS_PATH = {
     REAL_FOLDER: "projects/",
@@ -20,7 +20,7 @@ const getProyectData = async () => {
             const { REAL_FOLDER } = PROYECTS_PATH;
             return {
                 name: project,
-                id: uudi.randomUUID(),
+                id: crypto.randomUUID(),
                 url: REAL_FOLDER + project + "/index.html",
                 //Shown take the firt 2 numbres - Si se borra un proyecto que agregue ese numero
                 number: String(index + 1).padStart(2, "0"),
