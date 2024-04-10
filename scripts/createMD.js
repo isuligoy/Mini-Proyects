@@ -1,5 +1,5 @@
 import fs from "node:fs/promises";
-import { getDate } from "./getDate.js";
+import { getDate } from "./getDateForAction.js";
 const getProyectCodeLink = (url) => {
     return BADGES.LINK_CODE(PLACEHOLDER.GITHUB_URL + url);
 };
