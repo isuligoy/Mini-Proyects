@@ -1,0 +1,19 @@
+name: Create JSON and README
+
+on:
+  push:
+    # branches: [ main ]
+  workflow_dispatch:
+
+jobs:
+  create_files:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout your repository using git
+        uses: actions/checkout@v4
+
+      - name: Run createJson.js script
+        run: node scripts/createJson.js
+
+      - name: Run createMD.js script
+        run: node scripts/createMD.js
