@@ -1,7 +1,7 @@
 [
   {
     "name": "01-Side-Navbar",
-    "id": "5fcdfedc-bcc8-411f-8f42-1081d732b68d",
+    "id": "97438da5-9361-4d8b-be2e-1303ea9dfed6",
     "url": "projects/01-Side-Navbar/index.html",
     "number": "01",
     "image": "1",
@@ -9,7 +9,7 @@
   },
   {
     "name": "02-Cart-Shopping",
-    "id": "d630a7ce-b976-4f5b-aa1d-ce682450a3de",
+    "id": "06b65b3e-cbef-4f1e-967e-2d974c842277",
     "url": "projects/02-Cart-Shopping/index.html",
     "number": "02",
     "image": "1",
@@ -17,7 +17,7 @@
   },
   {
     "name": "03-DropDown",
-    "id": "1addb835-a429-472d-83a0-f9902b497f94",
+    "id": "5a5d1666-49b7-4d63-a7ef-8510d2dabacc",
     "url": "projects/03-DropDown/index.html",
     "number": "03",
     "image": "1",
@@ -25,7 +25,7 @@
   },
   {
     "name": "04-Galery",
-    "id": "fb8b6e7b-fe64-43da-8c9e-b717ce3205f0",
+    "id": "8b2d2040-5ee9-4ac5-a80f-6edcd9031a1d",
     "url": "projects/04-Galery/index.html",
     "number": "04",
     "image": "1",
@@ -33,7 +33,7 @@
   },
   {
     "name": "05-Image-accordion",
-    "id": "2ed04354-3458-405d-9c34-3216affb93d9",
+    "id": "73babcfb-e719-41a1-a1db-0fd226ded6a3",
     "url": "projects/05-Image-accordion/index.html",
     "number": "05",
     "image": "1",
@@ -41,7 +41,7 @@
   },
   {
     "name": "06-Input-Float-Label",
-    "id": "242c97af-98da-4777-bc41-b3bb80b63dc6",
+    "id": "07d1a902-c690-413f-afd1-f07778ad4b41",
     "url": "projects/06-Input-Float-Label/index.html",
     "number": "06",
     "image": "1",
@@ -49,7 +49,7 @@
   },
   {
     "name": "07-Cards-hover",
-    "id": "2b27d978-c8c4-4b36-83a7-5f8e622f03a1",
+    "id": "65beb313-23b5-4716-bf87-0a3c3c00b2a7",
     "url": "projects/07-Cards-hover/index.html",
     "number": "07",
     "image": "1",
@@ -57,7 +57,7 @@
   },
   {
     "name": "08-Landing-page-hero",
-    "id": "c1681a2d-96b4-47ef-a9d8-9a46fb5a551e",
+    "id": "30d03a2f-3382-4da2-af99-794fd105b0f9",
     "url": "projects/08-Landing-page-hero/index.html",
     "number": "08",
     "image": "1",
@@ -65,7 +65,7 @@
   },
   {
     "name": "09-Clock-Countdown",
-    "id": "59817218-7d98-4df6-9afa-33447a21c35a",
+    "id": "d0598b7e-2143-4fe5-9aa1-614a7f5113a3",
     "url": "projects/09-Clock-Countdown/index.html",
     "number": "09",
     "image": "1",
@@ -73,7 +73,7 @@
   },
   {
     "name": "10-Music-player",
-    "id": "ef524c27-16d7-4890-89d8-05a26fc123ae",
+    "id": "8d065200-926e-407a-bb1f-a9a32d323c6f",
     "url": "projects/10-Music-player/index.html",
     "number": "10",
     "image": "1",
@@ -81,9 +81,25 @@
   },
   {
     "name": "11-Hover-images",
-    "id": "2f23b538-f3b9-4f59-9274-52fad075e05a",
+    "id": "4e3d0c28-4110-4aa5-9a68-639eba167d6e",
     "url": "projects/11-Hover-images/index.html",
     "number": "11",
+    "image": "1",
+    "fecha_creacion": "15-05-1600"
+  },
+  {
+    "name": "12-Image-slider",
+    "id": "6dc3711c-8363-47e6-b092-5fb68ceb2b16",
+    "url": "projects/12-Image-slider/index.html",
+    "number": "12",
+    "image": "1",
+    "fecha_creacion": "15-05-1600"
+  },
+  {
+    "name": "13-Input-download",
+    "id": "c7fed5d9-cb49-49a1-9afc-00b186193850",
+    "url": "projects/13-Input-download/index.html",
+    "number": "13",
     "image": "1",
     "fecha_creacion": "15-05-1600"
   }
