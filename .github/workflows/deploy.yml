@@ -19,7 +19,10 @@ jobs:
     runs-on: ubuntu-latest
     permissions:
       contents: write
-      
+
+    runs:
+      using: 'node20'
+
     steps:
       - name: Checkout your repository using git
         uses: actions/checkout@v4
@@ -38,11 +41,13 @@ jobs:
           commit_user_name: isuligoy [Github Actions - bot]
           commit_user_email: ignaciosuligoy@gmail.com
           commit_author: isuligoy
-          node-version: 20
-          package-manager: pnpm@latest
+
   # job to start the deploy
   build:
     runs-on: ubuntu-latest
+    runs:
+      using: 'node20'
+
     # if: "contains(github.event.head_commit.message, '[gh-page]')"
     steps:
       - name: Checkout your repository using git
@@ -64,3 +69,6 @@ jobs:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
+        with:
+          node-version: "20.x"
+          package-manager: pnpm@latest
