@@ -28,8 +28,22 @@ jobs:
           package-manager: pnpm@latest # The Node package manager that should be used to install dependencies and build your site. Automatically detected based on your lockfile. (optional)
       
       # Run create files
-      - name: Run create files
-        run: ./.github/workflows/createFiles.yml
+      # - name: Run create files
+      #   run: ./.github/workflows/createFiles.yml
+
+      - name: Run createJson.js script
+        run: node scripts/createJson.js
+
+      - name: Run createMD.js script
+        run: node scripts/createMD.js
+
+      - name: Commit and push changes
+        uses: stefanzweifel/git-auto-commit-action@v4
+        with:
+          commit_message: "Update files"
+          commit_user_name: [Github Actions - bot]
+          commit_user_email: ignaciosuligoy@gmail.com
+          commit_user_name: isuligoy
 
   deploy:
     needs: build
