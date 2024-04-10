@@ -9,7 +9,8 @@ on:
 
 # Allow this job to clone the repo and create a page deployment
 permissions:
-  contents: read
+  contents: read 
+  contents: write
   pages: write
   id-token: write
 
@@ -17,18 +18,8 @@ jobs:
   build:
     runs-on: ubuntu-latest
     # if: "contains(github.event.head_commit.message, '[gh-page]')"
-    permissions:
-      contents: write
       
     steps:
-      - name: Checkout your repository using git
-        uses: actions/checkout@v4
-      - name: Install, build, and upload your site
-        uses: withastro/action@v2
-        with:
-          node-version: 20 
-          package-manager: pnpm@latest 
-
       # - name: Run create files
       #   run: ./.github/workflows/createFiles.yml
 
@@ -46,6 +37,12 @@ jobs:
           commit_user_name: Github Actions - bot
           commit_user_email: ignaciosuligoy@gmail.com
           commit_author: isuligoy
+
+      - name: Install, build, and upload your site
+            uses: withastro/action@v2
+            with:
+              node-version: 20 
+              package-manager: pnpm@latest 
 
   deploy:
     needs: build
