@@ -14,23 +14,17 @@ permissions:
   id-token: write
 
 jobs:
-  build:
+  # job Create the files json and readme
+  create_files:
     runs-on: ubuntu-latest
-    # if: "contains(github.event.head_commit.message, '[gh-page]')"
+    permissions:
+      contents: write
+
     steps:
       - name: Checkout your repository using git
         uses: actions/checkout@v4
-      - name: Install, build, and upload your site
-        uses: withastro/action@v2
-        with:
-          # path: . # The root location of your Astro project inside the repository. (optional)
-          node-version: 20 # The specific version of Node that should be used to build your site. Defaults to 20. (optional)
-          package-manager: pnpm@latest # The Node package manager that should be used to install dependencies and build your site. Automatically detected based on your lockfile. (optional)
       
       # Run create files
-      # - name: Run create files
-      #   run: ./.github/workflows/createFiles.yml
-
       - name: Run createJson.js script
         run: node scripts/createJson.js
 
@@ -38,12 +32,27 @@ jobs:
         run: node scripts/createMD.js
 
       - name: Commit and push changes
-        uses: stefanzweifel/git-auto-commit-action@v4
+        uses: stefanzweifel/git-auto-commit-action@v5
         with:
-          commit_message: "Update files"
-          commit_user_name: [Github Actions - bot]
+          commit_message: "Update files [github actions]"
+          commit_user_name: isuligoy [Github Actions - bot]
           commit_user_email: ignaciosuligoy@gmail.com
-          commit_user_name: isuligoy
+          commit_author: isuligoy
+
+  # job to start the deploy
+  build:
+    needs: create_files
+    runs-on: ubuntu-latest
+
+    # if: "contains(github.event.head_commit.message, '[gh-page]')"
+    steps:
+      - name: Checkout your repository using git
+        uses: actions/checkout@v4
+      - name: Install, build, and upload your site
+        uses: withastro/action@v2
+        with:
+          node-version: 20
+          package-manager: npm@latest
 
   deploy:
     needs: build
@@ -56,3 +65,5 @@ jobs:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
+        with:
+          node-version: 20

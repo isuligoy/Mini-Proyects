@@ -19,3 +19,5 @@
         -   [] ⭐Cuando se agregue preguntar con CLI
             -   [x] Crear otra carpeta para el próximo proyecto
     -   [x] Agregue a una tabla en el ReadMe, con link del repo / pagina / dia de creación
+
+<!-- https://danieljsaldana.dev/crear-una-canalizacion-de-ci-cd-con-github-actions -->
