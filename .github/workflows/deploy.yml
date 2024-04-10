@@ -3,13 +3,13 @@ name: Deploy to GitHub Pages
 on:
   # Trigger the workflow every time you push to the `main` branch 
   push:
-    branches: [ main ]
+    # branches: [ main ]
   # Allows you to run this workflow manually from the Actions tab on GitHub.
   workflow_dispatch:
 
 # Allow this job to clone the repo and create a page deployment
 permissions:
-  contents: read|write
+  contents: read
   pages: write
   id-token: write
 
@@ -17,32 +17,6 @@ jobs:
   build:
     runs-on: ubuntu-latest
     # if: "contains(github.event.head_commit.message, '[gh-page]')"
-    
-    steps:
-      - name: Checkout your repository using git
-        uses: actions/checkout@v4
-      - name: Use Node.js
-        uses: actions/setup-node@v4
-        with:
-          node-version: 20
-      - name: Install dependencies
-        run: npm install
-
-      # Run create files
-      - name: Run createJson.js script
-        run: node scripts/createJson.js
-
-      - name: Run createMD.js script
-        run: node scripts/createMD.js
-
-      - name: Commit and push changes
-        uses: stefanzweifel/git-auto-commit-action@v4
-        with:
-          commit_message: "Update files [github actions]"
-          commit_user_name: isuligoy [Github Actions - bot]
-          commit_user_email: ignaciosuligoy@gmail.com
-          commit_author: isuligoy
-
       - name: Install, build, and upload your site
         uses: withastro/action@v2
         with:
@@ -62,7 +36,5 @@ jobs:
         uses: actions/deploy-pages@v4
 
 
-
-
-              # - name: Run create files
-        # run: ./.github/workflows/createFiles.yml
+# - name: Run create files
+# run: ./.github/workflows/createFiles.yml
