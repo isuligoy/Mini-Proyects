@@ -10,7 +10,6 @@ on:
 # Allow this job to clone the repo and create a page deployment
 permissions:
   contents: read
-  contents: write
   pages: write
   id-token: write
 
@@ -18,7 +17,9 @@ jobs:
   build:
     runs-on: ubuntu-latest
     # if: "contains(github.event.head_commit.message, '[gh-page]') "
-      
+    permissions:
+      contents: write
+    
     steps:
       # - name: Run create files
       #   run: ./.github/workflows/createFiles.yml
