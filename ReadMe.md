@@ -13,6 +13,8 @@
 | # 09 | 09-Clock-Countdown | [![Link Badge](https://img.shields.io/badge/Page-181717?logo=github&logoColor=fff&style=flat-square)](https://isuligoy.github.io/Mini-Proyects/projects/09-Clock-Countdown/index.html)| [![GitHub Badge](https://img.shields.io/badge/Código-181717?logo=react&logoColor=fff&style=flat-square)](https://github.com/isuligoy/Mini-Proyects/tree/main/public/projects/09-Clock-Countdown) |
 | # 10 | 10-Music-player | [![Link Badge](https://img.shields.io/badge/Page-181717?logo=github&logoColor=fff&style=flat-square)](https://isuligoy.github.io/Mini-Proyects/projects/10-Music-player/index.html)| [![GitHub Badge](https://img.shields.io/badge/Código-181717?logo=react&logoColor=fff&style=flat-square)](https://github.com/isuligoy/Mini-Proyects/tree/main/public/projects/10-Music-player) |
 | # 11 | 11-Hover-images | [![Link Badge](https://img.shields.io/badge/Page-181717?logo=github&logoColor=fff&style=flat-square)](https://isuligoy.github.io/Mini-Proyects/projects/11-Hover-images/index.html)| [![GitHub Badge](https://img.shields.io/badge/Código-181717?logo=react&logoColor=fff&style=flat-square)](https://github.com/isuligoy/Mini-Proyects/tree/main/public/projects/11-Hover-images) |
+| # 12 | 12-Image-slider | [![Link Badge](https://img.shields.io/badge/Page-181717?logo=github&logoColor=fff&style=flat-square)](https://isuligoy.github.io/Mini-Proyects/projects/12-Image-slider/index.html)| [![GitHub Badge](https://img.shields.io/badge/Código-181717?logo=react&logoColor=fff&style=flat-square)](https://github.com/isuligoy/Mini-Proyects/tree/main/public/projects/12-Image-slider) |
+| # 13 | 13-Input-download | [![Link Badge](https://img.shields.io/badge/Page-181717?logo=github&logoColor=fff&style=flat-square)](https://isuligoy.github.io/Mini-Proyects/projects/13-Input-download/index.html)| [![GitHub Badge](https://img.shields.io/badge/Código-181717?logo=react&logoColor=fff&style=flat-square)](https://github.com/isuligoy/Mini-Proyects/tree/main/public/projects/13-Input-download) |
 
 ## 🚨 USE CASES
 
@@ -20,6 +22,7 @@
 -   `npm run cf <name-folder-flag>`: create folder, cera la carpeta con html/css/js para empezar a codear, agregando el nombre del proyecto
 -   `npm run cj`: create json, crea el json que sera usado para mostrar los proyectos
 -   `npm run crm`: create ReadMe, crea el ReadMe con las tabla de todos los links
--   `cjandcrm`: combinación entre _npm run cj_ && _npm run crm_
+-   `cjandcrm`: combinación entre _npm run cj_ & _npm run crm_
+-   `[gh-page]`: agregar este tag al commit para que de esta forma se hage el deploy de github pages
 
-![text](https://img.shields.io/badge/Last%20Github%20Action-28/03/2024-ff69b4?style=for-the-badge&color=blue)
+![text](https://img.shields.io/badge/Last%20Github%20Action-10/04/2024-ff69b4?style=for-the-badge&color=blue)
