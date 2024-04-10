@@ -12,20 +12,20 @@ jobs:
       contents: write
 
   steps:
-      - name: Checkout your repository using git
-        uses: actions/checkout@v4
-        
-      # Run create files
-      - name: Run createJson.js script
-        run: node scripts/createJson.js
+    - name: Checkout your repository using git
+      uses: actions/checkout@v4
+      
+    # Run create files
+    - name: Run createJson.js script
+      run: node scripts/createJson.js
 
-      - name: Run createMD.js script
-        run: node scripts/createMD.js
+    - name: Run createMD.js script
+      run: node scripts/createMD.js
 
-      - name: Commit and push changes
-        uses: stefanzweifel/git-auto-commit-action@v4
-        with:
-          commit_message: "Update files [github actions]"
-          commit_user_name: isuligoy [Github Actions - bot]
-          commit_user_email: ignaciosuligoy@gmail.com
-          commit_author: isuligoy
+    - name: Commit and push changes
+      uses: stefanzweifel/git-auto-commit-action@v4
+      with:
+        commit_message: "Update files [github actions]"
+        commit_user_name: isuligoy [Github Actions - bot]
+        commit_user_email: ignaciosuligoy@gmail.com
+        commit_author: isuligoy
