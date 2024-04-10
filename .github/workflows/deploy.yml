@@ -29,7 +29,7 @@ jobs:
       
       # Run create files
       - name: Run create files
-        run: ./.github/workflows/create_files.yml
+        run: ./.github/workflows/createFiles.yml
 
   deploy:
     needs: build
