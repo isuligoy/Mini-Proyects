@@ -23,9 +23,8 @@ jobs:
       - name: Install, build, and upload your site
         uses: withastro/action@v2
         with:
-          # path: . # The root location of your Astro project inside the repository. (optional)
-          node-version: 20 # The specific version of Node that should be used to build your site. Defaults to 20. (optional)
-          package-manager: pnpm@latest # The Node package manager that should be used to install dependencies and build your site. Automatically detected based on your lockfile. (optional)
+          node-version: 20 
+          package-manager: pnpm@latest
       
       - name: Run createJson.js script
         run: node scripts/createJson.js
@@ -45,5 +44,7 @@ jobs:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
+        with:
+          node-version: 20 
 # - name: Run create files
 # run: ./.github/workflows/createFiles.yml
