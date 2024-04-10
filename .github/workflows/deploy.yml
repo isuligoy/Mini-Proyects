@@ -2,8 +2,8 @@ name: Deploy to GitHub Pages
 
 on:
   # Trigger the workflow every time you push to the `main` branch 
-  # push:
-    # branches: [ main ]
+  push:
+    branches: [ main ]
   # Allows you to run this workflow manually from the Actions tab on GitHub.
   workflow_dispatch:
 
@@ -35,6 +35,8 @@ jobs:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
+        with:
+        node-version: 20 
 
 # - name: Run create files
 # run: ./.github/workflows/createFiles.yml
