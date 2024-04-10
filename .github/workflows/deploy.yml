@@ -33,8 +33,8 @@ jobs:
       - name: Commit and push changes
         uses: stefanzweifel/git-auto-commit-action@v4
         with:
-          commit_message: "Update files"
-          commit_user_name: Github Actions - bot
+          commit_message: "Update files [github actions]"
+          commit_user_name: isuligoy [Github Actions - bot]
           commit_user_email: ignaciosuligoy@gmail.com
           commit_author: isuligoy
 
