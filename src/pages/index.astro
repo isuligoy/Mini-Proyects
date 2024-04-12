@@ -1,17 +1,21 @@
 ---
 import Layout from "@/layouts/Layout.astro";
 import projects from "@scripts/projects.json";
+//
 ---
 
 <Layout title="Mini-Projects">
     <main class="link-card-grid">
         <section class="proyect-show">
             <h1>Mini-Projects</h1>
-            <div id="iframe-container">
-                <!-- <iframe
-                    class="iframe"
-                    src="http://localhost:4321/projects/10-Music-player/index.html"
-                    title="Page proyect"></iframe> -->
+            <div class="iframe-container">
+                <div class="iframe-content">
+                    <div class="loader"></div>
+                    <iframe
+                        src="http://localhost:4321/projects/10-Music-player/index.html"
+                        title="Page proyect"
+                        onload="this.style.opacity = 1"></iframe>
+                </div>
             </div>
         </section>
         <span class="divider"> </span>
@@ -53,35 +57,52 @@ import projects from "@scripts/projects.json";
         align-items: center;
         grid-template-columns: 1fr auto 1fr;
     }
+
     .proyect-show {
         height: var(--height-containers);
         display: flex;
         flex-direction: column;
         justify-content: center;
-
+        align-items: center;
         & h1 {
             margin-bottom: 35px;
             text-align: center;
         }
 
-        & #iframe-container {
+        & .iframe-container {
+            /* --iframe-width: 1440px;
+            --iframe-height: 900px; */
+            --iframe-width: 1440px;
+            --iframe-height: 1024px;
+            --iframe-zoom: 0.25;
+
+            width: calc(var(--iframe-width) * var(--iframe-zoom));
+            height: calc(var(--iframe-height) * var(--iframe-zoom));
             overflow: hidden;
             position: relative;
-            aspect-ratio: 16 / 8;
-            /* width: 100%;
-            /* width: 1440px;
-            height: 900px; */
-            background-color: red;
-            & .iframe {
-                position: absolute;
-                border: 0;
-                width: 100vw;
-                height: 100vh;
-                pointer-events: none;
+            /* background-color: red; */
+
+            & .iframe-content {
+                /* -ms-zoom: var(--iframe-zoom); */
+                transform: scale(var(--iframe-zoom));
                 transform-origin: 0 0;
-                top: 50%;
-                left: 50%;
-                transform: scale(0.298) translate(-50%, -50%);
+                & iframe {
+                    width: var(--iframe-width);
+                    height: var(--iframe-height);
+                    pointer-events: none;
+                }
+                & .loader {
+                    display: none;
+                    position: absolute;
+                    width: var(--iframe-width);
+                    height: var(--iframe-height);
+                    color: white;
+                    font-size: 5rem;
+
+                    &::before {
+                        content: "Click para ver una previsualizacion";
+                    }
+                }
             }
         }
     }
