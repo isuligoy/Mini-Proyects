@@ -11,11 +11,11 @@ import projects from "@scripts/projects.json";
             <div class="iframe-container">
                 <div class="iframe-content">
                     <div class="loader"></div>
-                    <iframe
+                    <!-- <iframe
                         id="iframe"
                         src=""
                         title="Page proyect"
-                        onload="this.style.opacity = 1"></iframe>
+                        onload="this.style.opacity = 1"></iframe> -->
                 </div>
             </div>
         </section>
@@ -46,17 +46,17 @@ import projects from "@scripts/projects.json";
 </Layout>
 
 <script>
-    const getUrlPage = document.querySelectorAll("tr");
-    const iframe = document.querySelector("#iframe");
-    const loader = document.querySelector(".loader");
+    // const getUrlPage = document.querySelectorAll("tr");
+    // const iframe = document.querySelector("#iframe");
+    // const loader = document.querySelector(".loader");
 
-    getUrlPage.forEach((row) => {
-        row.addEventListener("click", () => {
-            loader.style.display = "none";
-            const url = row.dataset.url;
-            iframe.src = url;
-        });
-    });
+    // getUrlPage.forEach((row) => {
+    //     row.addEventListener("click", () => {
+    //         loader.style.display = "none";
+    //         const url = row.dataset.url;
+    //         iframe.src = url;
+    //     });
+    // });
 </script>
 
 <style is:global>
