@@ -12,7 +12,8 @@ import projects from "@scripts/projects.json";
                 <div class="iframe-content">
                     <div class="loader"></div>
                     <iframe
-                        src="http://localhost:4321/projects/10-Music-player/index.html"
+                        id="iframe"
+                        src=""
                         title="Page proyect"
                         onload="this.style.opacity = 1"></iframe>
                 </div>
@@ -29,7 +30,7 @@ import projects from "@scripts/projects.json";
                 <tbody>
                     {
                         projects.map(({ name, url, id, number }) => (
-                            <tr id={id}>
+                            <tr id={id} data-url={url}>
                                 <td>{number}</td>
                                 <td>{name}</td>
                                 <td>
@@ -43,6 +44,20 @@ import projects from "@scripts/projects.json";
         </section>
     </main>
 </Layout>
+
+<script>
+    const getUrlPage = document.querySelectorAll("tr");
+    const iframe = document.querySelector("#iframe");
+    const loader = document.querySelector(".loader");
+
+    getUrlPage.forEach((row) => {
+        row.addEventListener("click", () => {
+            loader.style.display = "none";
+            const url = row.dataset.url;
+            iframe.src = url;
+        });
+    });
+</script>
 
 <style is:global>
     main {
@@ -80,7 +95,7 @@ import projects from "@scripts/projects.json";
             height: calc(var(--iframe-height) * var(--iframe-zoom));
             overflow: hidden;
             position: relative;
-            /* background-color: red; */
+            background-color: white;
 
             & .iframe-content {
                 /* -ms-zoom: var(--iframe-zoom); */
@@ -92,15 +107,15 @@ import projects from "@scripts/projects.json";
                     pointer-events: none;
                 }
                 & .loader {
-                    display: none;
                     position: absolute;
                     width: var(--iframe-width);
                     height: var(--iframe-height);
-                    color: white;
                     font-size: 5rem;
+                    z-index: 15;
+                    color: black;
 
                     &::before {
-                        content: "Click para ver una previsualizacion";
+                        content: "Click a link to see a previsualization";
                     }
                 }
             }
