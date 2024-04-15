@@ -1,6 +1,4 @@
-*,
-*::before,
-*::after {
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -35,8 +33,7 @@ body {
 }
 .arrow-down {
     color: #e6a86f;
-    width: 35px;
-    height: 35px;
+    font-size: 30px;
     cursor: pointer;
     /* font-size: 35px !important; */
 }
@@ -49,8 +46,9 @@ body {
 }
 .more-icon {
     color: #e6a86f;
-    width: 35px;
-    height: 35px;
+    font-size: 30px;
+    /* width: 35px;
+    height: 35px; */
 }
 .connection-container {
     display: flex;
@@ -60,8 +58,9 @@ body {
 }
 .header-icon {
     color: #e6a86f;
-    width: 20px;
-    height: 20px;
+    font-size: 20px;
+    /* width: 20px;
+    height: 20px; */
 }
 .connection {
     color: #f2f2f2;
@@ -137,25 +136,28 @@ body {
         display: flex;
         justify-content: center;
         align-items: center;
-        gap: 10px;
+        gap: 25px;
         margin-bottom: 15px;
     }
 
     & .skip-icon {
-        fill: #e6a86f;
+        color: #e6a86f;
         cursor: pointer;
-        width: 40px;
-        height: 40px;
+        font-size: 35px;
+        /* width: 40px;
+        height: 40px; */
     }
 
     & .play-icon {
-        fill: #e6a86f;
+        color: #e6a86f;
         cursor: pointer;
-        width: 60px;
-        height: 60px;
+        font-size: 60px;
+        /* width: 60px;
+        height: 60px; */
     }
 
     & .item-container {
+        color: #f2f2f2;
         width: 100%;
         display: flex;
         justify-content: space-between;
@@ -189,8 +191,7 @@ body {
         position: absolute;
         top: 30px;
         left: 25px;
-        width: 25px;
-        height: 25px;
+        font-size: 30px;
         color: #f2f2f2;
         transform: rotate(90deg);
     }
@@ -254,8 +255,10 @@ body {
     }
 
     & .more-icon {
-        width: 20px;
-        height: 20px;
+        font-size: 20px;
+        /* width: 20px;
+        height: 20px; */
         color: #ebebebaf;
+        cursor: pointer;
     }
 }

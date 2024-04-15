@@ -4,23 +4,18 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Music-player</title>
+        <script src="../../assets/icons.js"></script>
         <link rel="stylesheet" href="styles.css" />
     </head>
     <body>
         <div class="phone">
             <div class="header-container">
-                <svg class="arrow-down">
-                    <use href="../../assets/icons.svg#arrow_angle-down" />
-                </svg>
+                <i class="fa-solid fa-angle-down arrow-down"></i>
                 <span class="playlist-title">Radio Lofi Watiter</span>
-                <svg class="more-icon">
-                    <use href="../../assets/icons.svg#dots-horizontal" />
-                </svg>
+                <i class="fa-solid fa-ellipsis more-icon"></i>
             </div>
             <div class="connection-container">
-                <svg class="header-icon">
-                    <use href="../../assets/icons.svg#headphones" />
-                </svg>
+                <i class="fa-solid fa-headphones header-icon"></i>
                 <span class="connection">Connect to Airpods Pro</span>
             </div>
             <div class="cover-container">
@@ -39,23 +34,13 @@
             </div>
             <div class="bottom-container">
                 <div class="controller-container">
-                    <svg class="skip-icon">
-                        <use href="../../assets/icons.svg#skip-prev" />
-                    </svg>
-                    <svg class="play-icon">
-                        <use href="../../assets/icons.svg#play" />
-                    </svg>
-                    <svg class="skip-icon">
-                        <use href="../../assets/icons.svg#skip-next" />
-                    </svg>
+                    <i class="fa-solid fa-backward-step skip-icon"></i>
+                    <i class="fa-regular fa-circle-play play-icon"></i>
+                    <i class="fa-solid fa-forward-step skip-icon"></i>
                 </div>
                 <div class="item-container">
-                    <svg class="">
-                        <use href="../../assets/icons.svg#chromcast" />
-                    </svg>
-                    <svg class="">
-                        <use href="../../assets/icons.svg#share" />
-                    </svg>
+                    <i class="fa-brands fa-chromecast"></i>
+                    <i class="fa-solid fa-share-nodes"></i>
                 </div>
             </div>
         </div>
@@ -63,9 +48,7 @@
         <!-- PLAYLIST -->
         <div class="phone">
             <div class="playlist-image">
-                <svg class="arrow-down">
-                    <use href="../../assets/icons.svg#arrow_angle-down" />
-                </svg>
+                <i class="fa-solid fa-angle-down arrow-down"></i>
                 <img src="../../assets/photo5.jpg" alt="" />
             </div>
             <div class="playlist-info">
@@ -78,9 +61,7 @@
                         <span class="song-title">Walking in Ueno</span>
                         <span class="song-author">Lofi Waiter</span>
                     </div>
-                    <svg class="more-icon">
-                        <use href="../../assets/icons.svg#dots-horizontal" />
-                    </svg>
+                    <i class="fa-solid fa-ellipsis more-icon"></i>
                 </div>
             </div>
         </div>
@@ -127,11 +108,7 @@
                         <span class="song-title">${songs[i].title}</span>
                         <span class="song-author">${songs[i].author}</span>
                     </div>
-                    <svg class="more-icon">
-                        <use
-                            href="../../assets/icons.svg#dots-horizontal"
-                        />
-                    </svg>
+                    <i class="fa-solid fa-ellipsis more-icon"></i>
             `;
             song.appendChild(songContainer);
         }
