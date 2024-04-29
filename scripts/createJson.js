@@ -18,13 +18,13 @@ const getProyectData = async () => {
         const createProjectJSON = projects.map((project, index) => {
             const { REAL_FOLDER } = PROYECTS_PATH;
             return {
-                name: project,
                 id: crypto.randomUUID(),
+                name: project,
                 url: REAL_FOLDER + project + "/index.html",
                 //Shown take the firt 2 numbres - Si se borra un proyecto que agregue ese numero
                 number: String(index + 1).padStart(2, "0"),
-                image: `1`,
-                fecha_creacion: "15-05-1600",
+                // image: `1`,
+                // fecha_creacion: "15-05-1600",
             };
         });
         return createProjectJSON;
