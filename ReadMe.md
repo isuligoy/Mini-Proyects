@@ -25,4 +25,4 @@
 -   `cjandcrm`: combinación entre _npm run cj_ & _npm run crm_
 -   `[gh-page]`: agregar este tag al commit para que de esta forma se hage el deploy de github pages
 
-![text](https://img.shields.io/badge/Last%20Github%20Action-12/04/2024-ff69b4?style=for-the-badge&color=blue)
+![text](https://img.shields.io/badge/Last%20Github%20Action-19/07/2024-ff69b4?style=for-the-badge&color=blue)
