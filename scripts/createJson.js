@@ -12,6 +12,7 @@ const PROYECTS_PATH = {
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const proyectosPath = path.join(__dirname, PROYECTS_PATH.DIRECTORY_PATH);
 
+// Create the JSON info, for then return
 const getProyectData = async () => {
     try {
         const projects = await fs.readdir(proyectosPath);
@@ -19,13 +20,10 @@ const getProyectData = async () => {
         const createProjectJSON = projects.map((project, index) => {
             const { REAL_FOLDER } = PROYECTS_PATH;
             return {
-                id: crypto.randomUUID(),
+                //id: crypto.randomUUID(),
                 name: project,
                 url: REAL_FOLDER + project + "/index.html",
-                //Shown take the firt 2 numbres - Si se borra un proyecto que agregue ese numero
                 number: String(index + 1).padStart(2, "0"),
-                // image: `1`,
-                // fecha_creacion: "15-05-1600",
             };
         });
         return createProjectJSON;
@@ -34,10 +32,33 @@ const getProyectData = async () => {
     }
 };
 
+// Check if the new json is the same as the old one
+const checkJSONFile = async () => {
+    try {
+        let currentJsonData = [];
+        const { CURRET_DIRECTORY } = PROYECTS_PATH;
+        const currentJson = await fs.readFile(
+            CURRET_DIRECTORY + "projects.json",
+            "utf-8"
+        );
+        return (currentJsonData = JSON.parse(currentJson));
+    } catch (error) {
+        console.error(error);
+    }
+};
+
+// Set the JSON info from getProyectData and then create
+// the json file in the proyects folder
 const generateJSONFile = async () => {
     try {
         const projectsData = await getProyectData();
+        const oldData = await checkJSONFile();
+
         const jsonData = JSON.stringify(projectsData, null, 2);
+        const areEqual = JSON.stringify(oldData, null, 2) === jsonData;
+
+        if (areEqual)
+            return console.log("Ya son el mismo json, nada para cambiar");
 
         const { CURRET_DIRECTORY } = PROYECTS_PATH;
         await fs.writeFile(CURRET_DIRECTORY + "projects.json", jsonData);

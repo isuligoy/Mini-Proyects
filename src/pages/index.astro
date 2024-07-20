@@ -29,8 +29,8 @@ import projects from "@scripts/projects.json";
                 </thead>
                 <tbody>
                     {
-                        projects.map(({ name, url, id, number }) => (
-                            <tr id={id} data-url={url}>
+                        projects.map(({ name, url, number }) => (
+                            <tr data-url={url}>
                                 <td>{number}</td>
                                 <td>{name}</td>
                                 <td>

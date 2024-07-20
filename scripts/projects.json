@@ -1,110 +1,92 @@
 [
   {
-    "id": "ade2a178-dbdc-431f-abea-10a7d5a2115f",
     "name": "01-Side-Navbar",
     "url": "projects/01-Side-Navbar/index.html",
     "number": "01"
   },
   {
-    "id": "a2e1bd2d-e51a-401c-9337-d659a170caf3",
     "name": "02-Cart-Shopping",
     "url": "projects/02-Cart-Shopping/index.html",
     "number": "02"
   },
   {
-    "id": "9e0e9eb7-7a79-4f1e-a9a9-48e050b1dc16",
     "name": "03-DropDown",
     "url": "projects/03-DropDown/index.html",
     "number": "03"
   },
   {
-    "id": "5901610a-38f7-4fca-a0dd-8a4b183c2b22",
     "name": "04-Galery",
     "url": "projects/04-Galery/index.html",
     "number": "04"
   },
   {
-    "id": "64c378f6-d7f8-4442-a15a-f62ffd5cd8be",
     "name": "05-Image-accordion",
     "url": "projects/05-Image-accordion/index.html",
     "number": "05"
   },
   {
-    "id": "f955b94a-400c-4fcb-bacc-c007119b61bb",
     "name": "06-Input-Float-Label",
     "url": "projects/06-Input-Float-Label/index.html",
     "number": "06"
   },
   {
-    "id": "f78e7177-c17c-4b8f-89e2-333cb244e88c",
     "name": "07-Cards-hover",
     "url": "projects/07-Cards-hover/index.html",
     "number": "07"
   },
   {
-    "id": "7d714093-3a32-4794-8d83-b2dd91bf0cf6",
     "name": "08-Landing-page-hero",
     "url": "projects/08-Landing-page-hero/index.html",
     "number": "08"
   },
   {
-    "id": "52a7088d-528d-4771-833f-b78c4a8b85af",
     "name": "09-Clock-Countdown",
     "url": "projects/09-Clock-Countdown/index.html",
     "number": "09"
   },
   {
-    "id": "2e3fac02-4946-468e-a069-35edad9ad5f9",
     "name": "10-Music-player",
     "url": "projects/10-Music-player/index.html",
     "number": "10"
   },
   {
-    "id": "c7ea940b-b5d3-4afb-9d0d-1f9c6afc4b67",
     "name": "11-Hover-images",
     "url": "projects/11-Hover-images/index.html",
     "number": "11"
   },
   {
-    "id": "671af716-3fc9-4af3-945b-9d8e39b065a9",
     "name": "12-Image-slider",
     "url": "projects/12-Image-slider/index.html",
     "number": "12"
   },
   {
-    "id": "aab8c7a9-9db3-4909-b8ec-0df9f08f0fe5",
     "name": "13-Input-download",
     "url": "projects/13-Input-download/index.html",
     "number": "13"
   },
   {
-    "id": "cd4f5e5d-36dd-4756-8b93-ac5f647a15ea",
     "name": "14-Border-hover",
     "url": "projects/14-Border-hover/index.html",
     "number": "14"
   },
   {
-    "id": "16df901e-ba8a-450f-9ccd-8ef5f0b30668",
     "name": "15-Responsibe-interior-design",
     "url": "projects/15-Responsibe-interior-design/index.html",
     "number": "15"
   },
   {
-    "id": "3a3dff3e-65d0-4322-9ce5-5d15ba01bb58",
     "name": "16-Github-profile",
     "url": "projects/16-Github-profile/index.html",
     "number": "16"
   },
   {
-    "id": "b0505174-aaad-4f22-8b88-fb3d622c4062",
-    "name": "17-animate-scroll",
-    "url": "projects/17-animate-scroll/index.html",
+    "name": "17-Animate-scroll",
+    "url": "projects/17-Animate-scroll/index.html",
     "number": "17"
   },
   {
-    "id": "53eef91a-aa15-4ace-8d96-d024440279f3",
-    "name": "18-image-slider",
-    "url": "projects/18-image-slider/index.html",
+    "name": "18-Image-slider",
+    "url": "projects/18-Image-slider/index.html",
     "number": "18"
   }
 ]
