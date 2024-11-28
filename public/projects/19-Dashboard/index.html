@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="../../assets/icons.js"></script>
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script type="module" src="main.js"></script>
+  </head>
+  <body>
+    <article class="table-widget">
+      <div class="caption">
+        <h2>Team Members</h2>
+        <button class="export-btn" type="button">Export</button>
+      </div>
+
+      <table>
+        <thead>
+          <tr id="header-row"></tr>
+        </thead>
+        <tbody id="team-member-rows"></tbody>
+      </table>
+    </article>
+  </body>
+
+  <script>
+    const USERS = [
+      {
+        src: "../../assets/photo1.jpg",
+        alt: "photo1",
+        name: "John Doe",
+        alias: "New York",
+        status: "active",
+        email: "Jh5Q4@example.com",
+        tag: ["dev"],
+      },
+      {
+        src: "../../assets/photo2.jpg",
+        alt: "photo1",
+        name: "John Doe",
+        alias: "New York",
+        status: "active",
+        email: "Jh5Q4@example.com",
+        tag: ["dev"],
+      },
+      {
+        src: "../../assets/photo3.jpg",
+        alt: "photo1",
+        name: "John Doe",
+        alias: "New York",
+        status: "active",
+        email: "Jh5Q4@example.com",
+        tag: ["dev"],
+      },
+    ]
+
+    const headerRow = document.getElementById("header-row")
+    const body = document.getElementById("team-member-rows")
+
+    const header = ["Name", "Status", "Email", "Tags"]
+    const headerHtml = header.map((el) => `<td>${el}</td>`).join("")
+    headerRow.innerHTML = headerHtml
+
+    const rowsHtml = USERS.map(
+      (el) => /* html */ `
+                <tr>
+                    <td class="team-member-profile">
+                        <img src="${el.src}" alt="${el.alt}" />
+                        <div class="profile-info">
+                            <div class="profile-info__name">${el.name}</div>
+                            <div class="profile-info__alias">${el.alias}</div>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="status">
+                            <div class="status__circle status--${el.status}">${
+        el.status
+      } </div>
+                        </div>
+                    </td>
+                    <td>${el.email}</td>
+                    <td>
+                        <div class="tags">
+                            ${el.tag
+                              .map(
+                                (tag) =>
+                                  `<div class="tag tag--${tag}">${tag}</div>`
+                              )
+                              .join("")}
+                        </div>
+                    </td>
+                </tr>
+            `
+    ).join("") // Join all rows HTML into a single string
+    body.innerHTML = rowsHtml // Set the innerHTML of the tbody to the rows HTML
+  </script>
+</html>

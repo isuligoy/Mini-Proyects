@@ -1,0 +1,29 @@
+[
+  {
+    "src": "../../assets/photo1.jpg",
+    "alt": "photo1",
+    "name": "John Doe",
+    "alias": "New York",
+    "status": "active",
+    "email": "Jh5Q4@example.com",
+    "tag": ["dev"]
+  },
+  {
+    "src": "../../assets/photo2.jpg",
+    "alt": "photo1",
+    "name": "John Doe",
+    "alias": "New York",
+    "status": "active",
+    "email": "Jh5Q4@example.com",
+    "tag": ["dev"]
+  },
+  {
+    "src": "../../assets/photo3.jpg",
+    "alt": "photo1",
+    "name": "John Doe",
+    "alias": "New York",
+    "status": "active",
+    "email": "Jh5Q4@example.com",
+    "tag": ["dev"]
+  }
+]
