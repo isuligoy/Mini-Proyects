@@ -1,0 +1,57 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: system-ui, sans-serif;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #1f1d2b;
+}
+
+.draggable {
+  position: absolute;
+  width: 115px;
+  height: 115px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffd791;
+  border-radius: 5px;
+  font-size: 24px;
+  line-height: 1.5;
+  box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.5);
+  cursor: move;
+}
+
+.two {
+  background-color: green;
+}
+
+.three {
+  background-color: pink;
+}
+
+.four {
+  background-color: red;
+}
+
+.five {
+  background-color: lightblue;
+}
+
+.six {
+  background-color: blue;
+}
+
+.seven {
+  background-color: orange;
+}
+
+.eight {
+  background-color: purple;
+}
