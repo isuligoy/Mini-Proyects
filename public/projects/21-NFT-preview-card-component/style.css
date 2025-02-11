@@ -1,0 +1,111 @@
+:root{    
+    /* Primary */
+
+    --soft-blue: hsl(215, 51%, 70%);
+    --cyan: hsl(178, 100%, 50%);
+
+    /* Neutral */
+
+    /* --very-dark-blue-main: hsl(217, 54%, 11%); */
+    --very-dark-blue-card: hsl(216, 50%, 16%);
+    --very-dark-blue-line: hsl(215, 32%, 27%);
+    --white: hsl(0, 0%, 100%);
+
+    --font-family: 'Outfit', sans-serif;
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html,body{
+    width: 100%;
+    color: var(--white);
+}
+html{
+    font-family: var(--font-family);
+}
+
+.main-container{
+    height: 100vh; 
+    background: var(--very-dark-blue-main);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.article-image{
+    width: 100%;
+    border-radius: 15px;
+}
+.article-image:hover{
+    filter: blur(2px);
+}
+.info__paragraph{
+    font-size: 20px;
+    font-weight: 100;
+}
+.card-eth{
+    width: 400px;
+    height: 700px;
+    padding: 20px;
+    background: var(--very-dark-blue-card);
+    box-shadow: 1px 1px 24px 0px rgba(77,77,77,0.75);
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.cripto-card__info{
+    display: flex;
+    flex-direction: column;
+    height: 40%;
+    gap: 13%;
+}
+.info__paragraph{
+    color: var(--soft-blue);
+}	
+
+.info__cripto{
+    display: flex;
+    justify-content: space-between;
+}
+.info__cripto div img{
+    margin-right: 5px;
+}
+.info__avatar{
+    display: flex;
+    align-items: center; 
+    gap: 20px;   
+}
+.info__avatar p{
+    display: inline-block;  
+}
+.info__avatar img{
+    width: 45px;
+    border: 2px solid var(--white);
+    border-radius: 50%;
+}	
+span{
+    color: var(--cyan);
+}	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }*/

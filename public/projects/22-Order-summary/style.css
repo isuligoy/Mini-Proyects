@@ -1,0 +1,134 @@
+:root{
+
+    --pale-blue: hsl(225, 100%, 94%);
+    --brigh-blue: hsl(245, 75%, 52%);
+
+    --very-pale-blue: hsl(225, 100%, 98%);
+    --desaturated-blue: hsl(224, 23%, 55%);
+    --dark-blue: hsl(223, 47%, 23%);
+    
+    --base-card-color: #fff;
+
+    --border-radius: 18px;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-image: url("images/pattern-background-desktop.svg"); 
+    background-repeat: no-repeat;
+    background-size: 100vw;
+    background-color: var(--pale-blue);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Red Hat Display', sans-serif;
+    font-size: 16px;
+}
+
+.card__container-center{
+    width: 450px;
+    height: 700px;
+    background-color: var(--base-card-color);
+    border-radius: var(--border-radius);
+    box-shadow: var(--very-pale-blue) 0px 0px 16px 2px;
+    
+}
+
+
+.hero__image{
+    border-radius: var(--border-radius) var(--border-radius) 0 0;
+    width: 100%
+} 
+
+.card{
+    text-align: center;
+    height: calc( 100% - 220px);
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: auto;
+    
+}
+
+.card__title{
+    font-weight: 900;
+}
+
+.card__information{
+    display: inline-block;
+    font-weight: 500;
+    color: var(--desaturated-blue);
+    margin-top: 20px;
+}
+.card__price{
+    height: 100px;
+    width: 100%;
+    display: flex;
+    justify-content:space-between;
+    background-color: var(--very-pale-blue);
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+.card__price-plan{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 24px;
+}
+.card__price-plan p {
+    margin-left: 24px;
+}
+span{
+    font-weight: 700;
+}
+span:nth-last-of-type(1){
+    font-weight: 100;
+    color: var(--desaturated-blue);
+}
+
+.cta__pay{
+    background: none;
+    border: 0;
+    color: var(--brigh-blue);
+    cursor: pointer;
+    margin-right: 24px;
+}
+
+.card__cta{
+    margin-top: 30px;
+}
+
+.cta__blue{
+    display: block;
+    font-weight: 700;
+    width: 100%;
+    height: 50px;
+    color: var(--pale-blue);
+    background-color: var(--brigh-blue);    
+    border-radius: 10px;
+    border: 0;
+    cursor: pointer;
+}
+
+.cta__ligth{
+    margin-top: 30px;
+    color: var(--desaturated-blue);
+    border: 0;
+    background: none;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+
+
