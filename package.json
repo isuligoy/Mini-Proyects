@@ -1,19 +1,19 @@
 {
-  "name": "mini-proyect",
-  "version": "0.0.0",
-  "type": "module",
-  "scripts": {
-    "dev": "astro dev",
-    "start": " astro dev",
-    "build": "astro build",
-    "preview": "astro preview",
-    "astro": "astro",
-    "cf": "node scripts/createFolder.js",
-    "cj": "node scripts/createJson.js",
-    "crm": "node scripts/createMD.js",
-    "cjandcrm": "npm run cj && npm run crm"
-  },
-  "dependencies": {
-    "astro": "4.4.0"
-  }
+    "name": "mini-proyect",
+    "version": "0.0.0",
+    "type": "module",
+    "scripts": {
+        "dev": "astro dev",
+        "start": " astro dev",
+        "build": "astro build",
+        "preview": "astro preview",
+        "astro": "astro",
+        "cf": "node scripts/createFolder.js",
+        "cj": "node scripts/createJson.js",
+        "crm": "node scripts/createMD.js",
+        "cjandcrm": "npm run cj && npm run crm"
+    },
+    "dependencies": {
+        "astro": "4.4.0"
+    }
 }
